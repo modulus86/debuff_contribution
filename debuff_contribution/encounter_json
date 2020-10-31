@@ -1,0 +1,13 @@
+{
+    playedID :
+    {
+        magic_damage : ##
+        physical_damage : ##
+        name : string
+        class : string
+
+    } ...n
+
+    magical_damage : bool
+    physical_debuff : bool
+}
