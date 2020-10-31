@@ -10,8 +10,6 @@ key = sys.argv[1]
 report = '/' + sys.argv[2]
 
 
-
-
 p = {
     'api_key' : key
 }
