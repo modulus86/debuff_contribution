@@ -13,7 +13,9 @@ tables = '/report/tables/damage-done'
 key = sys.argv[1]
 report = '/' + sys.argv[2]
 
-report = '/CZ1X9txqk3KV8fjy'
+
+# These are example reports: first report only has 1 monk - Windwalker; the 2nd only has 1 monk - Brew Master
+#report = '/CZ1X9txqk3KV8fjy'
 #report = '/FBNYw7htHTgaKcxr'
 
 p = {
@@ -173,15 +175,18 @@ for n in raid_encounter:
 
 
     print('Total Physical damage debuff contribution:',physical_contribution)
-    print("Physical damage DPS contribution:",(physical_contribution / length))
-    print("The number of sources with a physical damage component", physical_benefitees)
-    print("The average damage gain per source:", (physical_contribution)/physical_benefitees)
-    print("The average damage per second gained per source:", (physical_contribution / length) / (physical_benefitees))
+    if physical_benefitees > 0:
+        print("Physical damage DPS contribution:", (physical_contribution / length))
+        print("The number of sources with a physical damage component", physical_benefitees)
+        print("The average damage per second gained per source:", (physical_contribution / length) / (physical_benefitees))
+        print("The average damage gain per source:", (physical_contribution) / physical_benefitees)
+
     print('Total Magic damage debuff contribution:', magic_contribution)
-    print("Magic damage DPS contribution:", (magic_contribution / length))
-    print("The number of sources with a magic damage component:", magic_benefitees)
-    print("The average damage gain per source:",(magic_contribution) / magic_benefitees)
-    print("The average damage per second gained per source:", (magic_contribution / length) / (magic_benefitees))
+    if physical_benefitees > 0:
+        print("Magic damage DPS contribution:", (magic_contribution / length))
+        print("The number of sources with a magic damage component:", magic_benefitees)
+        print("The average damage gain per source:",(magic_contribution) / magic_benefitees)
+        print("The average damage per second gained per source:", (magic_contribution / length) / (magic_benefitees))
 
 
 
