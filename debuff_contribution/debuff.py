@@ -182,7 +182,7 @@ for n in raid_encounter:
         print("The average damage gain per source:", (physical_contribution) / physical_benefitees)
 
     print('Total Magic damage debuff contribution:', magic_contribution)
-    if physical_benefitees > 0:
+    if magic_benefitees > 0:
         print("Magic damage DPS contribution:", (magic_contribution / length))
         print("The number of sources with a magic damage component:", magic_benefitees)
         print("The average damage gain per source:",(magic_contribution) / magic_benefitees)
