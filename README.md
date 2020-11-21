@@ -15,7 +15,7 @@ Running the command `pip install requirements.txt` in the root directory of the 
 ## Usage
 
 You should be able to run this with the command:
-`python debuff.py <WCL API v1 key> <WCL report`
+`python debuff.py <WCL API v1 key> <WCL report>`
 
 ## Feedback 
 
