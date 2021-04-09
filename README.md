@@ -19,4 +19,4 @@ You should be able to run this with the command:
 
 ## Feedback 
 
-This is a work in progress, so and feedback is welcome. I don't expect this to be of a huge use to people and was more created out discussions with my guild and if bringing a WW monk would be worth it for the debuff or if the player should just play something else that does more damage.
+This is a work in progress, so and feedback is welcome. I don't expect this to be of a huge use to people and was more created out discussions with my guild and if bringing a WW monk would be worth it for the debuff or if the player should just play something else that does more damage. [note: this was before it was determined that WW was actually good damage]
